@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading App</title>
+</head>
+<body>
+    <div id="app">
+        <div class="loading-container" id="loading-container">
+            <div class="spinner"></div>
+            <p class="loading-text">Загрузка данных...</p>
+        </div>
+        <div class="content hidden" id="content">
+            <h1>Добро пожаловать!</h1>
+            <p>Данные успешно загружены.</p>
+            <button id="retry-btn" class="hidden">Попробовать снова</button>
+        </div>
+        <div class="error-container hidden" id="error-container">
+            <div class="error-icon">⚠️</div>
+            <p class="error-text">Не удалось загрузить данные. Проверьте подключение к интернету.</p>
+            <button id="retry-btn-error">Попробовать снова</button>
+        </div>
+    </div>
+</body>
+</html>
